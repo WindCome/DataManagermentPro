@@ -1,7 +1,7 @@
-package com.example.springlearning.controller;
+package com.example.mediashare.controller;
 
-import com.example.springlearning.api.UserService;
-import com.example.springlearning.jpa.UserRepository;
+import com.example.mediashare.api.UserService;
+import com.example.mediashare.jpa.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

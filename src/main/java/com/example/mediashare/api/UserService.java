@@ -1,6 +1,6 @@
-package com.example.springlearning.api;
+package com.example.mediashare.api;
 
-import com.example.springlearning.controller.UserController;
+import com.example.mediashare.controller.UserController;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 

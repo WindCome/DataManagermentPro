@@ -1,16 +1,12 @@
-package com.example.springlearning.controller;
+package com.example.mediashare.controller;
 
-import com.example.springlearning.jpa.UserRepository;
-import com.example.springlearning.model.UserInfo;
+import com.example.mediashare.jpa.UserRepository;
+import com.example.mediashare.model.UserInfo;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 
 @RestController

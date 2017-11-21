@@ -1,4 +1,4 @@
-package com.example.springlearning;
+package com.example.mediashare;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

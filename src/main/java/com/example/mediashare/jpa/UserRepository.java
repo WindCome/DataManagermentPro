@@ -1,6 +1,6 @@
-package com.example.springlearning.jpa;
+package com.example.mediashare.jpa;
 
-import com.example.springlearning.model.UserInfo;
+import com.example.mediashare.model.UserInfo;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 

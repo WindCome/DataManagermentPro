@@ -1,4 +1,4 @@
-package com.example.springlearning.model;
+package com.example.mediashare.model;
 
 import javax.persistence.*;
 import java.io.Serializable;
