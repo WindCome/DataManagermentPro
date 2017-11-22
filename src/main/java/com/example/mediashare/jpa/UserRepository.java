@@ -7,7 +7,6 @@ import org.springframework.data.jpa.repository.Query;
 import java.util.List;
 
 public interface UserRepository extends JpaRepository<UserInfo,Integer> {
-    @Query(value="select u from UserInfo u ")//where u.username = ?1 and u.password = ?2
-    List<UserInfo> findByNameAndPassWord();
-    //String name, String password
+    @Query(value="select count(u) from UserInfo u where u.username = ?1 and u.password = ?2")//
+    int findByNameAndPassWord(String name, String password);
 }

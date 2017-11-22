@@ -1,6 +1,7 @@
 package com.example.mediashare.controller;
 
 import com.example.mediashare.jpa.UserRepository;
+import com.example.mediashare.model.LoginUser;
 import com.example.mediashare.model.UserInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -22,12 +23,13 @@ public class IndexController {
     UserRepository userRepository;
     @RequestMapping(value="/data",method = RequestMethod.POST)
     @ResponseBody
-    //,@RequestParam String token
-    public UserInfo data(HttpServletResponse httpServletResponse)
+    public LoginUser data(HttpServletResponse httpServletResponse)
     {
-        List<UserInfo> list=userRepository.findByNameAndPassWord();
-        for(UserInfo x:list)
-            System.out.println(x.getUsername());
-        return list.size()==0?null:list.get(0);
+        //UserController.LoginUser user=new UserController.LoginUser();
+//        List<UserInfo> list=userRepository.findByNameAndPassWord();
+//        for(UserInfo x:list)
+//            System.out.println(x.getUsername());
+//        return list.size()==0?null:list.get(0);
+        return null;
     }
 }
